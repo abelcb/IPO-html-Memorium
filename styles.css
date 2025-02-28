@@ -1,0 +1,137 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Estilos para la navegación */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Contenido principal */
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #666;
+}
+
+/* Formulario de nueva memoria */
+div textarea {
+    width: 80%;
+    max-width: 350px;
+    height: 80px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 16px;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+
+/* Estilos para el banco de memorias */
+section ul {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    margin: 20px auto;
+}
+
+section ul li {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+section ul li p {
+    margin: 5px 0;
+}
+.new-memory {
+    background: white;
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.new-memory textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+}
+
+.new-memory button {
+    display: block;
+    margin: 10px auto;
+}
+@keyframes rainbow-spin {
+    0%, 100% { transform: rotate(0deg); background-color: #008CBA; }
+    12.5% { background-color: red; }
+    25% { background-color: orange; }
+    37.5% { background-color: yellow; }
+    50% { background-color: green; }
+    62.5% { background-color: cyan; }
+    75% { background-color: blue; }
+    87.5% { background-color: purple; }
+    100% { transform: rotate(360deg); background-color: #008CBA; }
+}
+
+.rotate-rainbow {
+    animation: rainbow-spin 10s ease-in-out;
+}
