@@ -10,39 +10,44 @@
     <body>
         <div id="mySidepanel" class="sidepanel" onmouseover="openNav()" onmouseleave="closeNav()">    
             <span id="toggleSymbol" class="toggleSymbol">☰</span>
-
             <a href="index.html">Inicio</a>
             <a href="memory-bank.html">Memorias</a>
             <a></a>
-            <a onclick="setDefaultStyle()">DefaultLook</button>
-            <a onclick="setWarmStyle()">WarmLook</button>
-            <a onclick="setWarmDarkStyle()">WarmLook-Dark</button>
-            <a onclick="setMinimalistStyle()">Minimalist</button>
-            <a onclick="setMinimalistDarkStyle()">Minimalist-Dark</button>
-            <a onclick="setWaspDarkStyle()">Wasp-Dark</button>
-            <a onclick="setWaspStyle()">Wasp</button>
+            <a onclick="setDefaultStyle()">DefaultLook</a>
+            <a onclick="setWarmStyle()">WarmLook</a>
+            <a onclick="setWarmDarkStyle()">WarmLook-Dark</a>
+            <a onclick="setMinimalistStyle()">Minimalist</a>
+            <a onclick="setMinimalistDarkStyle()">Minimalist-Dark</a>
+            <a onclick="setWaspStyle()">Wasp</a>
+            <a onclick="setWaspDarkStyle()">Wasp-Dark</a>
         </div>
         <h1>Memorium</h1>
         <section>
             <h2>Banco de memorias</h2>
-            <ul>
+            <ul class="memory-list">
                 <li>
-                    <p>Memoria de Ejemplo 1</a>
-                    <p>-</a>
-                    <p>28 febrero 2024</a>
-                    <button type="button" onclick="rotateRainbow(this)">Recordar</button>
+                    <div>
+                        <p>Memoria de Ejemplo 1</a>
+                        <p>-</a>
+                        <p>28 febrero 2024</a>
+                        <button type="button" onclick="rotateRainbow(this)">Recordar</button>
+                    </div>
                 </li>
                 <li>
-                    <p>Memoria de Ejemplo 2</a>
-                    <p>-</a>
-                    <p>1 marzo 2024</a>
-                    <button type="button" onclick="rotateRainbow(this)">Recordar</button>
+                    <div>
+                        <p>Memoria de Ejemplo 2</a>
+                        <p>-</a>
+                        <p>1 marzo 2024</a>
+                        <button type="button" onclick="rotateRainbow(this)">Recordar</button>
+                    </div>
                 </li>
                 <li>
-                    <p>Memoria de Ejemplo 3</a>
-                    <p>-</a>
-                    <p>2 marzo 2024</a>
-                    <button type="button" onclick="rotateRainbow(this)">Recordar</button>
+                    <div>
+                        <p>Memoria de Ejemplo 3</a>
+                        <p>-</a>
+                        <p>2 marzo 2024</a>
+                        <button type="button" onclick="rotateRainbow(this)">Recordar</button>
+                    </div>
                 </li>
             </ul>
         </section>

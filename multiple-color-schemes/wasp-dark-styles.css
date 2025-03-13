@@ -1,20 +1,22 @@
+/* Basado en https://github.com/santiyounger/Wasp-Obsidian-Theme
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #EDEDED;
+    background-color: #242424;
     text-align: center;
+    color: #faf2d6;
 }
 
 /* Contenido principal */
 h1 {
-    color: #D49335;
+    color: #E0E0E0;
     margin-top: 20px;
 }
 
 h2 {
-    color: #D49335;
+    color: #E0E0E0;
 }
 
 button {
@@ -52,7 +54,7 @@ section ul li p {
 }
 
 div {
-    background: #C4C4C4;
+    background: #191919;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -70,12 +72,13 @@ div.new-memory textarea {
     height: 100px;
     padding: 10px;
     border: 1px solid #f8c537;
-    background-color: #ffffff;
-    color: #DEDEDE;
+    background-color: #3D3D3D;
+    color: #bdae93;
     border-radius: 5px;
     display: block;
     margin: 10px auto;
 }
+
 @keyframes rainbow-spin {
     0%, 100% { transform: rotate(0deg); background-color: #008CBA; }
     12.5% { background-color: red; }

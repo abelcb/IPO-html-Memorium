@@ -42,7 +42,7 @@ function setMinimalistDarkStyle(){
 }
 function setWaspDarkStyle(){
     let styleLink = document.getElementById("styleLink");
-    styleLink.setAttribute("href","waspdark-styles.css")
+    styleLink.setAttribute("href","wasp-dark-styles.css")
 }
 function setWaspStyle(){
     let styleLink = document.getElementById("styleLink");
