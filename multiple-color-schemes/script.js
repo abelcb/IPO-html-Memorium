@@ -50,5 +50,5 @@ function setWaspStyle(){
 }
 function setNewPaletteStyle(){
     let styleLink = document.getElementById("styleLink");
-    styleLink.setAttribute("href","blueStyle.css");
+    styleLink.setAttribute("href","blue-Style.css");
 }
