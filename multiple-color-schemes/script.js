@@ -48,7 +48,7 @@ function setWaspStyle(){
     let styleLink = document.getElementById("styleLink");
     styleLink.setAttribute("href","wasp-styles.css");
 }
-function setNewBlueStyle(){
+function setBlueStyle(){
     let styleLink = document.getElementById("styleLink");
     styleLink.setAttribute("href","blueStyle.css");
 }
