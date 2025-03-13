@@ -1,0 +1,127 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EDEDED;
+    text-align: center;
+}
+
+/* Contenido principal */
+h1 {
+    color: #D49335;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #D49335;
+}
+
+button {
+    background-color: #D49335;
+    color: #242424;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #DAA520;
+    color: #ffffff;
+}
+
+/* Estilos para el banco de memorias */
+.memory-list {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.memory-list div{
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+section ul li p {
+    margin: 5px 0;
+}
+
+div {
+    background: #C4C4C4;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+div.new-memory {
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+div.new-memory textarea {
+    width: 80%;
+    max-width: 350px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #f8c537;
+    background-color: #707070;
+    color: #DEDEDE;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+}
+::placeholder{
+    color: #DEDEDE;
+}
+@keyframes rainbow-spin {
+    0%, 100% { transform: rotate(0deg); background-color: #008CBA; }
+    12.5% { background-color: red; }
+    25% { background-color: orange; }
+    37.5% { background-color: yellow; }
+    50% { background-color: green; }
+    62.5% { background-color: cyan; }
+    75% { background-color: blue; }
+    87.5% { background-color: purple; }
+    100% { transform: rotate(360deg); background-color: #008CBA; }
+}
+
+.rotate-rainbow {
+    animation: rainbow-spin 10s ease-in-out;
+}
+.sidepanel {
+    height: 100%; /* Specify a height */
+    width: 20px; /* 20pxwidth - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #D49335;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .toggleSymbol {
+    color:#ccc
+  }
