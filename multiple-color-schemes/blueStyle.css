@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f3;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #3d5a80;
+}
+
+button {
+    background-color: #5a738e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #3d5a80;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    margin: 20px auto;
+}
+
+section ul li {
+    background: #dde6ed;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+section ul li p {
+    margin: 5px 0;
+}
+
+.new-memory {
+    background: #dde6ed;
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.new-memory textarea {
+    width: 80%;
+    max-width: 350px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #3d5a80;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+    background-color: #f0f4f8;
+    color: #2c3e50;
+}
+
+.new-memory button {
+    display: block;
+    margin: 10px auto;
+}
+
+@keyframes rainbow-spin {
+    0%, 100% { 
+        transform: rotate(0deg); 
+        background-color: #5a738e;
+    }
+    12.5% { background-color: red; }
+    25% { background-color: orange; }
+    37.5% { background-color: yellow; }
+    50% { background-color: green; }
+    62.5% { background-color: cyan; }
+    75% { background-color: blue; }
+    87.5% { background-color: purple; }
+    100% { 
+        transform: rotate(360deg); 
+        background-color: #5a738e;
+    }
+}
+
+.rotate-rainbow {
+    animation: rainbow-spin 10s ease-in-out;
+}
+
+.sidepanel {
+    height: 100%;
+    width: 20px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #5a738e;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2c3e50;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover {
+    color: #3d5a80;
+}
+
+.sidepanel .toggleSymbol {
+    color: #2c3e50;
+}
