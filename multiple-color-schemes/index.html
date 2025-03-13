@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Memorium</title>
+        <link id="styleLink" rel="stylesheet" href="default-styles.css">
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+        <div id="mySidepanel" class="sidepanel" onmouseover="openNav()" onmouseleave="closeNav()">    
+            <span id="toggleSymbol" class="toggleSymbol">☰</span>
+            <a href="index.html">Inicio</a>
+            <a href="memory-bank.html">Memorias</a>
+            <a onclick="setDefaultStyle()">DefaultLook</button>
+            <a onclick="setWarmStyle()">WarmLook</button>
+            <a onclick="setWarmDarkStyle()">WarmLook-Dark</button>
+            <a onclick="setMinimalistStyle()">Minimalist</button>
+            <a onclick="setMinimalistDarkStyle()">Minimalist-Dark</button>
+        </div>
+        <h1>Memorium</h1>
+        <h2>Almacenamiento a largo plazo de memorias</h2>
+        <div class="new-memory">
+            <h3>Nueva memoria</h3>
+            <p>Nombre de la memoria:</p>
+            <textarea name="memoryNameTextArea" placeholder="Nombre de tu memoria"></textarea>
+            <button type="button" onclick="rotateRainbow(this)">Guardar memoria</button>
+        </div>
+    </body>
+</html>

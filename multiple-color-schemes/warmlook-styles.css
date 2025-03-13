@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+/* Contenido principal */
+h1 {
+    color: #4a2c1f;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #6b4f3f;
+}
+
+button {
+    background-color: #a45c40; /* Warm reddish-brown */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+button:hover {
+    background-color: #8b3a24; /* Darker warm red */
+}
+
+/* Estilos para el banco de memorias */
+section ul {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    margin: 20px auto;
+}
+
+section ul li {
+    background: #fdf7e3; /* Soft parchment */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+section ul li p {
+    margin: 5px 0;
+}
+
+.new-memory {
+    background: #fdf7e3;
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.new-memory textarea {
+    width: 80%;
+    max-width: 350px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #8b5e3b;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+    background-color: #e6d5b8;
+    color: #4a2c1f;
+}
+
+.new-memory button {
+    display: block;
+    margin: 10px auto;
+}
+@keyframes rainbow-spin {
+    0%, 100% { 
+        transform: rotate(0deg); 
+        background-color: #a45c40; /* Warm reddish-brown */
+    }
+    12.5% { background-color: red; }
+    25% { background-color: orange; }
+    37.5% { background-color: yellow; }
+    50% { background-color: green; }
+    62.5% { background-color: cyan; }
+    75% { background-color: blue; }
+    87.5% { background-color: purple; }
+    100% { 
+        transform: rotate(360deg); 
+        background-color: #a45c40; /* Warm reddish-brown */
+    }
+}
+
+.rotate-rainbow {
+    animation: rainbow-spin 10s ease-in-out;
+}
+.sidepanel {
+    height: 100%; /* Specify a height */
+    width: 20px; /* 20pxwidth - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #4a2c1f; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #d6b48f;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #fdf7e3;
+  }
+  
+  .sidepanel .toggleSymbol {
+    color:#d6b48f
+  }
