@@ -44,3 +44,7 @@ function setWaspDarkStyle(){
     let styleLink = document.getElementById("styleLink");
     styleLink.setAttribute("href","waspdark-styles.css")
 }
+function setWaspStyle(){
+    let styleLink = document.getElementById("styleLink");
+    styleLink.setAttribute("href","wasp-styles.css")
+}
